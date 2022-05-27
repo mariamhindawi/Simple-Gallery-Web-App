@@ -1,4 +1,5 @@
-import Navbar from './navbar';
+import Home from './home';
+
 import './App.css';
 import {
   BrowserRouter,
@@ -10,7 +11,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
     <Routes>
-      <Route exact path="/" element={<Navbar />}/>
+      <Route path="/" element={<Home /> }/>
+
       
     </Routes>
   </BrowserRouter>
