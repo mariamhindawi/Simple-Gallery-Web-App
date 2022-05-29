@@ -52,7 +52,21 @@ export default function navbar() {
     <div className='bars' onClick={handleToggle}>
       <FaBars className='bars'></FaBars>
     </div>
+   
 </div>
+<div className={display}>
+    <ul class="nav-list-mobile">
+    <li class="nav-item"> > 360 Planner</li>
+    <li class="nav-item"> > Her</li>
+    <li class="nav-item"> > Him</li>
+    <li class="nav-item"> > The Wedding</li>
+    <li class="nav-item"> > Vendors</li>
+    <li class="nav-item"> > Gallery</li>
+    <li class="nav-item"> > Ideas&More</li>
+    <li class="nav-item"> > 360 Planner</li>
+    <li class="nav-item"> > Take a tour</li>
+  </ul>
+    </div>
 </>
 
   )
