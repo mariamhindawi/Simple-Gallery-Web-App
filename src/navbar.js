@@ -4,16 +4,16 @@ import {FaBars, FaSearch } from "react-icons/fa";
 
 export default function navbar() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const [display, setDisplay] = useState('nav-items-mobile show');
+  const [display, setDisplay] = useState('nav-items-mobile');
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [isActive, setActive] = useState("false");
   const handleToggle = () => {
     setActive(!isActive);
     if(isActive){
-      setDisplay('nav-items-mobile not-show');
+      setDisplay('not-show');
     }
     else{
-        setDisplay('nav-items-mobile show');
+        setDisplay('show');
     }
   };
   return (

@@ -1,4 +1,8 @@
-
+body{
+  margin: 0;
+  padding: 0;
+  
+  }
 .navbar-desktop{
   display: flex;
   align-items: center;
@@ -13,6 +17,10 @@
 .nav-logo img{
   width: 90px;
   height: auto;
+}
+
+.show, .not-show{
+  display: none;
 }
 .nav-list{
   display: flex;
@@ -44,7 +52,7 @@
   color: gray;
 }
 .nav-item{
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
   font-weight: 400;
   line-height: 20px;
@@ -64,6 +72,86 @@
 .navbar-mobile{
   display: none;
 }
+.nav-items-mobile{
+  display: none;
+}
+.footer{
+  bottom: 0;
+  width: 100%; 
+  height: auto;
+  background-color:black;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  box-sizing: border-box;
+  position: absolute;
+  flex-basis: 0;
+  padding-left: 112px;
+  padding-right: 112px;
+  padding-top: 16px;
+  padding-bottom: 20px;
+
+}
+.footer-1 p{
+  font-size: 18px;
+  color: rgba(156,163,175);
+  padding-bottom: 1.5rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+.footer-1 .app-image-container{
+  column-gap: 8px;
+  display: flex;
+  margin-block-start: 8px;
+}
+.footer-2{
+  margin-left: 80px;
+}
+.footer-2 ul li{
+  font-size: 17px;
+  color: white;
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+  font-weight: 200;
+  line-height: 24px;
+ 
+}
+.footer-2 ul li:nth-child(1){
+  color: rgb(128, 128, 128);
+  font-weight: 600;
+}
+.footer-3{
+  margin-left: 80px;
+}
+.footer-3 ul li{
+  font-size: 17px;
+  color: rgba(156,163,175);
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+  font-weight: 200;
+  line-height: 24px;
+ 
+}
+.footer-3 ul li:nth-child(1){
+  color: rgb(128, 128, 128);
+  font-weight: 600;
+}
+.footer-3 b{
+  color: white;
+}
+.footer-4{
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+.social-icon{
+  color: white;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
 @media (max-width:1200px){
   .nav-logo img {
     width: 50px;
@@ -84,6 +172,13 @@
  }
 }
 @media (max-width:768px){
+  .show{
+    display: flex;
+    
+  }
+  .not-show{
+    display: none;
+  }
   .navbar-desktop{
     display: none;
   }
@@ -109,14 +204,14 @@
     margin-bottom: 20px;
     font-size: larger;
   }
-}
-.nav-items-mobile{
-  display: none;
-}
-.show{
-  display: flex;
-  
-}
-.not-show{
-  display: none;
+  .footer{
+    flex-direction: column;
+    position: relative;
+  }
+  .footer-1, .footer-2, .footer-3, .footer-4{
+    margin-left: 0px;
+  }
+  .footer ul{
+    padding: 0px;
+  }
 }
