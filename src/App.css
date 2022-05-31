@@ -23,6 +23,7 @@ body{
   height: auto;
 }
 
+
 .show, .not-show{
   display: none;
 }
@@ -329,6 +330,56 @@ body{
   align-self: center;
   margin-top: 10px;
 }
+.photo-details{
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  margin-top:100px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+.photo-details img{
+  width: 45%;
+}
+.photo-details .details-title{
+  width: 45%;
+}
+.details-title h2{
+  font-weight: 500;
+  font-size: 34px;
+}
+.details-title h4{
+  color: gray;
+  font-weight: 400;
+  font-size: 18px;
+}
+.related-photos h1{
+  width: 90vw;
+  margin: auto;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.related-photos .photos-container {
+  width: 90vw;
+  margin: auto;
+}
+.related-photos .card{
+  width: 30%;
+  height: 300px;
+  box-shadow: none;
+  border: 1px solid #E0E0E0;
+  padding-bottom: 0;
+}
+.related-photos img{
+object-fit: cover;
+  height: 70%;
+}
+.related-photos .card-title{
+  margin-top: 30px;
+  align-self: start;
+  margin-left: 5px;
+}
 @media (max-width:1200px){
   .search-buttons{
     flex-direction: row;
@@ -359,6 +410,19 @@ body{
   }
 }
 @media (max-width:1000px){
+  .photo-details {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+  }
+  .photo-details img{
+    width: 100%;
+  
+  }
+  .photo-details .details-title{
+    width: 100%;
+  }
+  
   .app-image-container img{
     width: 80px;
   }
@@ -376,6 +440,9 @@ body{
   
 }
 @media (max-width:768px){
+  .related-photos .card-title{
+    padding: 20px;
+  } 
   .photos-container{
     flex-direction: column;
     margin-top: 30px;
@@ -414,6 +481,7 @@ body{
     margin: auto;
     margin-top: 20px;
     justify-content: space-between;
+    margin-bottom: 70px;
     
   }
   .bars{
@@ -440,6 +508,7 @@ body{
   .footer ul{
     padding: 0px;
   }
+
 }
 @media (max-width:530px){
   .news-container .slider{
