@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useEffect, useState}from 'react'
 import image from './images/logo.png'
 
 export default function Photo_details() {
@@ -8,9 +8,9 @@ export default function Photo_details() {
             <img alt='' src={image}></img>
             <div className='details-title'>
                 <h2>
-                    Details title
+                    jj
                 </h2>
-                <h4>Details description</h4>
+                <h4>hh</h4>
                 <div className='social-icons'>
 
                 </div>
