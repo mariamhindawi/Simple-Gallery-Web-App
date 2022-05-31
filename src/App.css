@@ -38,7 +38,7 @@ body{
   border: 2px solid rgb(209, 213, 219);
   border-radius: 0.5rem;
   width: 230px;
-  margin-left: 50px;
+  margin-left: 25px;
   margin-right: 18px;
   background-color: rgb(249, 250, 251) ;
   height: 34px;
@@ -292,7 +292,7 @@ body{
   background-color: black;
   margin-top: 20px;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 15px;
   border-radius: 8px;
 }
 .search-buttons button:hover{
@@ -301,7 +301,7 @@ body{
 .card {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 30%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);  
   height: 180px;
   border-radius: 8px;
@@ -359,6 +359,24 @@ body{
 }
 
 @media (max-width:1200px){
+  .search-buttons{
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .search-buttons button{
+    width: 48%;
+    padding: auto;
+  }
+
+ .nav-container{
+   flex-direction: column;
+ }
+ .search-container{
+   width: 300px;
+   margin: auto;
+   margin-bottom: 10px;
+ }
   .nav-logo img {
     width: 50px;
   }
@@ -381,24 +399,7 @@ body{
   .photo-search-container .search-container{
     width: 100%;
   }
-  .search-buttons{
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-  }
-  .search-buttons button{
-    width: 48%;
-    padding: auto;
-  }
-
- .nav-container{
-   flex-direction: column;
- }
- .search-container{
-   width: 300px;
-   margin: auto;
-   margin-bottom: 10px;
- }
+  
 }
 @media (max-width:768px){
   .photos-container{
