@@ -15,7 +15,38 @@ export default function vendors() {
         }   
         fetchData();
       });
-    
+      const slider = document.querySelector('.slides');
+
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+      if(slider){
+        
+      slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      });
+      slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+      });
+      slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+      });
+      slider.addEventListener('mousemove', (e) => {
+        if(!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+        console.log(walk);
+      });
+      
+      }
+      
   return (
       <>
         <div className='vendors-container'>
@@ -86,7 +117,7 @@ export default function vendors() {
        <div className='news-container'>
             <h1 className='news-title'>New and Notable</h1>
             <div class="slider">
-                <div class="slides">
+                <div class="slides slides2">
                     <div className='slide'>
                         <div className='image-container'>
                             <img src={urls[0]} alt=""></img>
@@ -152,7 +183,7 @@ export default function vendors() {
                         <div className='title-container'>
                             <p className='subtitle'>Title</p>
                             <p className='title'>Sub-title</p>
-                        </div>  
+                        </div>          
                     </div>
                 </div>
             </div>

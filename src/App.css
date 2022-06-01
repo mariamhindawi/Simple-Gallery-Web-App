@@ -562,8 +562,8 @@ object-fit: cover;
 }
 
 .pagination-list{
-  width: 45%;
   display: flex;
+  width: 27vw;
   margin: auto;
 }
 .pagination-list li{
@@ -587,7 +587,6 @@ a:link { text-decoration: none; color:black; }
 .pagination-container{
   display: flex;
   width: 75vw;
-  margin: auto;
 }
 img {
   border-radius: 5px;
