@@ -1,7 +1,6 @@
 import React , {useEffect, useState}from 'react'
 export default function vendors() {
     const [data, setData] = useState([]);
-    const [titles, setTitles] = useState([]);
     const [urls, setUrls] = useState([]);
 
 
@@ -11,7 +10,6 @@ export default function vendors() {
             .then(response => response.json())
             .then(json => {
                 setData(json);
-                setTitles(data.map( (item) => item.title));
                 setUrls(data.map( (item) => item.url));
             })
         }   

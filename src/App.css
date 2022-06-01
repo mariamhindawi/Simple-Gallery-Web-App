@@ -301,12 +301,12 @@ body{
 .search-buttons button:hover{
   font-weight: 600;
 }
-.card {
+.card{
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 90%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);  
-  height: 180px;
+  height: 220px;
   border-radius: 8px;
 }
 .photos-container{
@@ -324,6 +324,14 @@ body{
   top: 0;
   left: 0;
   height: 75%;
+}
+.photos-container .card-title{
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+
 }
 .card-title{
   font-size: 20px;
@@ -371,6 +379,10 @@ body{
   border: 1px solid #E0E0E0;
   padding-bottom: 0;
 }
+.related-photos .card:hover{
+  transform: scale(1);
+  transition: transform 0.5s;
+}
 .related-photos img{
 object-fit: cover;
   height: 70%;
@@ -379,6 +391,13 @@ object-fit: cover;
   margin-top: 30px;
   align-self: start;
   margin-left: 5px;
+}
+.related-photos .card:hover{
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+.related-photos .card-title{
+  text-align: left;
 }
 @media (max-width:1200px){
   .search-buttons{
@@ -460,6 +479,7 @@ object-fit: cover;
   }
   .photos-container .card-title{
     margin-top: 30px;
+    
   }
   .vendors-title, .news-title{
     font-size: 30px;
@@ -540,3 +560,48 @@ object-fit: cover;
     margin-bottom: 5px;
   }
 }
+
+.pagination-list{
+  width: 45%;
+  display: flex;
+  margin: auto;
+}
+.pagination-list li{
+  list-style-type: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);  
+  padding: 7px;
+  margin: 5px;
+  width:15px;
+  text-align: center;
+  border-radius: 5px;
+  height: 25px;
+  padding-top: 15px;
+}
+a:visited { text-decoration: none; color:gray; }
+a:hover { text-decoration: none; color:gray; }
+a:focus { text-decoration: none; color:black; }
+a:active { text-decoration: none; color:black; }
+a:link { text-decoration: none; color:black; }
+
+
+.pagination-container{
+  display: flex;
+  width: 75vw;
+  margin: auto;
+}
+img {
+  border-radius: 5px;
+}
+.link{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);  
+  height: 220px;
+  border-radius: 8px;}
+  .card-title{
+    color: #000;
+  }
+  .row a{
+    box-shadow: none;
+  }

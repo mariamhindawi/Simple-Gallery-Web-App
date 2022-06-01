@@ -6,11 +6,11 @@ import Photos from './photos'
 import Photo_details from './photo_details'
 
 
-export default function home() {
+export default function details() {
   return (
 <>
 <Navbar></Navbar>
-<Photos></Photos>
+<Photo_details></Photo_details>
 <Vendors></Vendors>
 <Footer></Footer>
 </>
